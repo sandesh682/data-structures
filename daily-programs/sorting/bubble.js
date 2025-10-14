@@ -13,6 +13,8 @@
 // }
 
 // Optimized
+// 1. Looping is improved to exclude sorted element, reverse loopong for i, i - 1 for j
+// 2. if array is already sorted, then break
 function bubbleSort(arr) {
   for (let i = arr.length; i > 0; i--) {
     let noSwaps = true;
