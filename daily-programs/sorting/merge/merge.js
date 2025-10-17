@@ -1,4 +1,4 @@
-export function merge(arr1, arr2) {
+export default function merge(arr1, arr2) {
   let result = [];
   let i = 0;
   let j = 0;
@@ -24,4 +24,4 @@ export function merge(arr1, arr2) {
   return result;
 }
 
-console.log(merge([1, 3, 5], [2, 4, 6, 8, 10]));
+// console.log(merge([1, 3, 5], [2, 4, 6, 8, 10]));
