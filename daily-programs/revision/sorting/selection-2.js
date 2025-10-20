@@ -1,11 +1,8 @@
-function selectionSort(arr, comparator) {
-  if (typeof comparator !== "function") {
-    comparator = (a, b) => a - b;
-  }
+function selectionSort(arr) {
   for (let i = 0; i < arr.length - 1; i++) {
     let minIdx = i;
     for (let j = i + 1; j < arr.length; j++) {
-      if (comparator(arr[j], arr[minIdx]) < 0) {
+      if (arr[j] < arr[minIdx]) {
         minIdx = j;
       }
     }
